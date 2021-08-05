@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+nav a {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.logo {
+    gap: 0.2em;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+i {
+    color: #1e78ff;
+}
+
+nav ul {
+    gap: 3em;
+    font-size: 17px;
+}
+
+.nav-btn {
+    border: 2px solid #1e78ff;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.hero-body {
+    padding: 2em 0 0 0;
+    align-items: center;
+}
+
+.hero-body>* {
+    flex-basis: 100%;
+}
+
+.content {
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+h1 {
+    font-size: clamp(2.5em, 4.8vw, 5.4em);
+    color: #1e78ff;
+    margin-top: 0;
+}
+
+span {
+    display: inline-block;
+    background-color: #cdf3ff;
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn {
+    background-color: #1e78ff;
+    padding: 0.9em 3em;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.img-body {
+    background-image: url(./drop.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+
+.img-body img {
+    position: relative;
+    bottom: -86px;
+    width: 300px;
+    clip-path: circle(50% at 154px 175px);
+}
+
+nav a:hover,
+.btn:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width:800px) {
+    .toggleMenu {
+        position: absolute;
+        right: 15px;
+        background-image: url(./bars-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        padding: 2em;
+        z-index: 1000;
+    }
+
+    .toggleMenu.active {
+        position: fixed;
+        background-image: url(./times-solid.svg);
+        background-size: 25px;
+    }
+
+    .navigation {
+        justify-content: center;
+        align-items: center;
+        transform: scale(1, 0);
+        -webkit-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        max-height: 0;
+        opacity: 0;
+    }
+
+    .navigation.active {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        max-height: 100%;
+        opacity: 1;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-body {
+        gap: 5em;
+        flex-wrap: wrap;
+    }
+
+    .content {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
