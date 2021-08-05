@@ -1,6 +1,6 @@
-Mute Coder helps and tries to simplify regularly required web solutions.
+**Mute Coder** helps and tries to simplify regularly required web solutions.
 
-Mute Coder helps you in learning and writing the shortest and understandable codes in HTML, CSS, and Js.
+**Mute Coder** helps you in learning and writing the shortest and understandable codes in HTML, CSS, and Js.
 
 For More Content please Subscribe our Channel on Youtube.
 
